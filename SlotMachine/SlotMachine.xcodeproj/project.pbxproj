@@ -38,6 +38,9 @@
 		D1A2DE6D29904A2100277A5B /* Layers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A2DE6C29904A2100277A5B /* Layers.swift */; };
 		D1A2DE6F29904AFB00277A5B /* Reel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A2DE6E29904AFB00277A5B /* Reel.swift */; };
 		D1A2DE7129907C8500277A5B /* ReelObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A2DE7029907C8500277A5B /* ReelObjects.swift */; };
+		D1E94FE629A7B1DA00DC9EA7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D1E94FE429A7B1DA00DC9EA7 /* Model.xcdatamodeld */; };
+		D1E94FED29A7B42000DC9EA7 /* ScoreData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E94FEB29A7B42000DC9EA7 /* ScoreData+CoreDataClass.swift */; };
+		D1E94FEE29A7B42000DC9EA7 /* ScoreData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E94FEC29A7B42000DC9EA7 /* ScoreData+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +76,9 @@
 		D1A2DE6C29904A2100277A5B /* Layers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layers.swift; sourceTree = "<group>"; };
 		D1A2DE6E29904AFB00277A5B /* Reel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reel.swift; sourceTree = "<group>"; };
 		D1A2DE7029907C8500277A5B /* ReelObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelObjects.swift; sourceTree = "<group>"; };
+		D1E94FE529A7B1DA00DC9EA7 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		D1E94FEB29A7B42000DC9EA7 /* ScoreData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScoreData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D1E94FEC29A7B42000DC9EA7 /* ScoreData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScoreData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,7 @@
 		D149E4DF29808E3400EEE8B2 /* SlotMachine */ = {
 			isa = PBXGroup;
 			children = (
+				D1E94FEF29A7B42800DC9EA7 /* Model */,
 				D1A2DE67299047DD00277A5B /* Core */,
 				D1A2DE662990470D00277A5B /* Objects */,
 				D1168DE92981DB5000C9CB1E /* Assets */,
@@ -140,6 +147,7 @@
 				D149E4EA29808E3400EEE8B2 /* Main.storyboard */,
 				D149E4ED29808E3500EEE8B2 /* Assets.xcassets */,
 				D149E4EF29808E3500EEE8B2 /* LaunchScreen.storyboard */,
+				D1E94FE429A7B1DA00DC9EA7 /* Model.xcdatamodeld */,
 			);
 			path = SlotMachine;
 			sourceTree = "<group>";
@@ -162,6 +170,15 @@
 				D1A2DE6C29904A2100277A5B /* Layers.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		D1E94FEF29A7B42800DC9EA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D1E94FEB29A7B42000DC9EA7 /* ScoreData+CoreDataClass.swift */,
+				D1E94FEC29A7B42000DC9EA7 /* ScoreData+CoreDataProperties.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,11 +273,14 @@
 			files = (
 				D149E4E729808E3400EEE8B2 /* GameScene.swift in Sources */,
 				D149E4E929808E3400EEE8B2 /* GameViewController.swift in Sources */,
+				D1E94FEE29A7B42000DC9EA7 /* ScoreData+CoreDataProperties.swift in Sources */,
 				D149E4E129808E3400EEE8B2 /* AppDelegate.swift in Sources */,
 				D1A2DE65299046D400277A5B /* Background.swift in Sources */,
+				D1E94FED29A7B42000DC9EA7 /* ScoreData+CoreDataClass.swift in Sources */,
 				D1A2DE69299047F600277A5B /* GameObject.swift in Sources */,
 				D1A2DE6F29904AFB00277A5B /* Reel.swift in Sources */,
 				D1A2DE7129907C8500277A5B /* ReelObjects.swift in Sources */,
+				D1E94FE629A7B1DA00DC9EA7 /* Model.xcdatamodeld in Sources */,
 				D1A2DE6B2990483E00277A5B /* GameProtocol.swift in Sources */,
 				D1A2DE6D29904A2100277A5B /* Layers.swift in Sources */,
 			);
@@ -478,6 +498,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D1E94FE429A7B1DA00DC9EA7 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D1E94FE529A7B1DA00DC9EA7 /* Model.xcdatamodel */,
+			);
+			currentVersion = D1E94FE529A7B1DA00DC9EA7 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D149E4D529808E3400EEE8B2 /* Project object */;
 }
